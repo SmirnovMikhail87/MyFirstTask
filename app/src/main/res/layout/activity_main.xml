@@ -8,9 +8,10 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:text="Hello World!"
+        android:text="@string/view_text_hello"
         android:textSize="30sp" />
 
     <EditText
@@ -19,13 +20,15 @@
         android:ems="8" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:insetTop="20dp"
         android:insetBottom="20dp"
+        android:onClick="sayHello"
         android:rotationX="0"
         android:rotationY="0"
-        android:text="Привет!"
+        android:text="@string/btn_text"
         android:textSize="26sp" />
 
     <Switch
